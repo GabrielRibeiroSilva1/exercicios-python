@@ -16,6 +16,7 @@ Atualizo sempre que concluo um novo exercício, com meta semanal.
 | 6 | [ex006_controle_habitos_semanais.py](ex006_controle_habitos_semanais.py) | Resume o aproveitamento dos hábitos semanais. | lista de dicionários, `//` e `%`, f-strings |
 | 7 | [ex007_calculo_meta_financeira.py](ex007_calculo_meta_financeira.py) | Mostra em quantos meses a meta é batida, o saldo final e quanto rendeu de juros. | `while`, juros compostos, validação de entrada |
 | 8 | [ex008_controle_gastos_diario.py](ex008_controle_gastos_diario.py) | Lista os gastos do dia e emite um alerta ao chegar perto do limite. | menu com `while True` + `break`, funções, `not in` |
+| 9 | [ex009_gasto_por_categoria.py](ex009_gasto_por_categoria.py) | Soma os gastos e mostra o total e o percentual por categoria. | dicionário montado pelo programa, `in`, soma por chave (`+=`), `.items()`, `:.1%` |
 
 ## Como executar
 
