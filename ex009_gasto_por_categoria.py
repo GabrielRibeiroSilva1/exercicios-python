@@ -8,27 +8,16 @@ gastos = [
     {"descricao": "Luz", "categoria": "Contas", "valor": 138.20},
 ]
 
-valor = 0
 totais = {}
-soma = 0
 for gasto in gastos:
-   
-    if gasto["categoria"] in totais:
-        categoria = gasto["categoria"]
-        soma_valor = totais[f"{categoria}"] + gasto["valor"]
-        totais[f"{categoria}"] = soma_valor
+    categoria = gasto["categoria"]
+    if categoria in totais:
+        totais[categoria] += gasto["valor"]
     else:
-        categoria = gasto['categoria']
-        totais[f"{categoria}"] = gasto["valor"]
+        totais[categoria] = gasto["valor"]
 
-total_geral = 0
-for categoria, total in totais.items():
-    total_geral += total
+total_geral = sum(totais.values())
 
 for categoria, total in totais.items():
-    print(f"{categoria}: R$ {total:.2f} ({total/total_geral:.1%})")
-
-print(f"Total de gastos: R$ {total_geral:.2f}")
-
-
-
+    print(f"{categoria}: R$ {total:.2f} ({total / total_geral:.1%})")
+print(f"Total: R$ {total_geral:.2f}")
